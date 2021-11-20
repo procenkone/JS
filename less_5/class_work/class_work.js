@@ -110,8 +110,8 @@
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
 // const array = []
 // f9=(arr, limit)=>{
-//     for (let i = 0; i < limit; i++) {
-//         arr.push(Math.floor(Math.random()*100))
+//     for (let i = 0; i < 15; i++) {
+//         arr.push(Math.floor(Math.random()*limit))
 //     }
 // }
 // f9(array, 75)
