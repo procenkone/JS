@@ -37,16 +37,7 @@
 // console.log(result)
 
 // - створити функцію яка повертає найменьше число з масиву
-// const arr = [43, 33, 56, 23, 76, 45]
-// let min = arr[0]
-// f3 = (array) => {
-//     for (let i = 0; i < array.length; i++) {
-//         if (min > array[i]) min = array[i]
-//     }
-//     return min
-// }
-// let result = f3(arr)
-// console.log(result)
+
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 // const arr = [12, 23, 45, 57, 87, 34, 23]
