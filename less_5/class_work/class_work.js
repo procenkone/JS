@@ -73,25 +73,18 @@
 
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
-// function f7() {
-//     let argumentsAll = arguments
-//     let min;
-//     let max;
-//     let argFn = (arg) => {
-//          min = arg[0]
-//          max = arg[0]
-//         for (let i = 0; i < arg.length; i++) {
-//             if (min > arg[i]) min = arg[i]
-//             if (max < arg[i]) max = arg[i]
-//         }
+// f7 = (...rest) => {
+//     let min = rest[0]
+//     let max = rest[0]
+//     for (let i = 0; i < rest.length; i++) {
+//         const restElement = rest[i];
+//         if (min > restElement && min !==0) min = restElement
+//         if(max<restElement) max = restElement
 //     }
-//     argFn(argumentsAll)
-//     console.log(max)
+//     console.log('найбільше число -' ,max )
 //     return min
 // }
-// let result = f7(1, 3, 4)
-// console.log(result)
-
+// console.log('return найменше -', f7(1, 2, 3, 5))
 
 
 // - створити функцію яка заповнює масив рандомними числами
@@ -103,7 +96,6 @@
 // }
 // f8(array)
 // console.log(array)
-
 
 
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
