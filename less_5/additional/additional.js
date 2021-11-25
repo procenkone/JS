@@ -32,6 +32,7 @@
 //     for (let i = 0; i < arr.length; i++) {
 //         if(i===j){
 //             [arr[i], arr[i+1]] = [arr[i+1], arr[i]];
+//             // a = arr[i]; arr[i] = arr[i+1]; arr[i] = a
 //         }
 //     }
 // }
