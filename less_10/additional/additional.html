@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .one{
+
+            background: coral;
+            margin: 15px;
+        }
+        .two{
+
+            background: burlywood;
+            margin: 15px;
+
+        }
+        .block{
+            position: absolute;
+            top: 100px;
+            left: 500px;
+
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            background: lavender;
+            box-shadow: 10px 5px 5px #e4dada;
+        }
+        .exit{
+            position: absolute;
+            right: 17px;
+            top: -12px;
+            cursor: pointer;
+            color: red;
+        }
+        .hide{
+            display: none;
+        }
+        .grandFather{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 600px;
+            margin: auto;
+        }
+        .father{
+            overflow: hidden;
+            width: 385px;
+        }
+        .children{
+            position: relative;
+            display: flex;
+            transition: .5s;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="one" id="id1" style="width: 100px; height: 150px"></div>
+<div class="two" id="id2" style="width: 100px; height: 150px"></div>
+<hr>
+<div class="grandFather">
+    <button class="prew">prew</button>
+    <div class="father">
+    <div class="children">
+        <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-128.png" alt="img">
+        <img src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-128.png" alt="img">
+        <img src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react-128.png" alt="img">
+        <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/react-128.png" alt="img">
+        <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-128.png" alt="img">
+        <img src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-128.png" alt="img">
+        <img src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react-128.png" alt="img">
+        <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-5/24/react-128.png" alt="img">
+    </div>
+</div>
+    <button class="next">next</button>
+</div>
+<hr>
+<p  class="p">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy
+    nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+    Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
+    suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
+<script src="additional.js"></script>
+</body>
+</html>
