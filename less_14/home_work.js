@@ -4,123 +4,231 @@
 // // Напиклад. // Прикнутись - 0.3с // Поснідати - 1с // Піти в душ - 0.5с // Дочекатись автобус - 3с // Пообідати - 1с // // І так далі
 
 
- function goodMorning() {
-    return new Promise((resolve, reject) => {
+// function goodMorning() {
+//     return new Promise((resolve) => {
+//             setTimeout(() => {
+//                 // console.log('good morning')
+//                 resolve('good morning')
+//             }, 3000)
+//         }
+//     )
+// }
+//
+// function wash() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             // console.log('wash')
+//             resolve('wash')
+//         }, 2000)
+//     })
+// }
+//
+// function breakfast() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             // console.log('breakfast')
+//             resolve('breakfast')
+//         }, 2000)
+//     })
+//
+// }
+//
+// function goTojob() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             // console.log('go to job')
+//             resolve('go to job')
+//         }, 2000)
+//     })
+// }
+//
+// function lunch() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             // console.log('lunch')
+//             resolve('lunch')
+//         }, 1000)
+//     })
+//
+// }
+//
+// function goToHome() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             // console.log('go to home')
+//             resolve('go to home')
+//         }, 1000)
+//     })
+// }
+//
+// function dinner() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             // console.log('dinner')
+//             resolve('dinner')
+//         }, 2000)
+//     })
+// }
+//
+// function playStation() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             // console.log('play station')
+//             resolve('play station')
+//         }, 900)
+//     })
+// }
+//
+// function sleep() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log('sleep')
+//         }, 900)
+//     })
+// }
+
+//
+// goodMorning()
+//     .then(result => {
+//         console.log(result)
+//         return wash()
+//     })
+//     .then(result => {
+//         console.log(result)
+//         return breakfast()
+//     })
+//     .then(result => {
+//         console.log(result)
+//         return goTojob()
+//     })
+//     .then(result => {
+//         console.log(result)
+//         return lunch()
+//     })
+//     .then(result => {
+//         console.log(result)
+//         return goToHome()
+//     })
+//     .then(result => {
+//         console.log(result)
+//         return dinner()
+//     })
+//     .then(result => {
+//         console.log(result)
+//         return playStation()
+//     })
+//     .then(result => {
+//         console.log(result)
+//        return sleep()
+//     })
+
+
+//---------------------------------------------------
+function goodMorning() {
+    return new Promise((resolve) => {
             setTimeout(() => {
-                console.log('good morning')
-                resolve()
+                //
+                resolve(console.log('good morning'))
             }, 3000)
         }
     )
 }
 
- function wash() {
-    return new Promise((resolve, reject)=>{
+function wash() {
+    return new Promise((resolve) => {
         setTimeout(() => {
-            console.log('wash')
-            resolve()
+            //
+            resolve(console.log('wash'))
         }, 2000)
     })
 }
 
-function breakfast(){
+function breakfast() {
     return new Promise((resolve, reject) => {
-        setTimeout(()=>{
-            console.log('breakfast')
-            resolve()
-        },2000)
+        setTimeout(() => {
+            //
+            resolve(console.log('breakfast'))
+        }, 2000)
     })
 
 }
 
-function goTojob(){
+function goTojob() {
     return new Promise((resolve, reject) => {
-    setTimeout(()=>{
-        console.log('go to job')
-        resolve()
-    },2000)
+        setTimeout(() => {
+            //
+            resolve(console.log('go to job'))
+        }, 2000)
     })
 }
 
-function lunch(){
+function lunch() {
     return new Promise((resolve, reject) => {
-        setTimeout(()=>{
-        console.log('lunch')
-            resolve()
-        },1000)
+        setTimeout(() => {
+            //
+            resolve(console.log('lunch'))
+        }, 1000)
     })
 
 }
 
-function goToHome(){
-   return new Promise((resolve, reject)=>{
-       setTimeout(()=>{
-           console.log('go to home')
-           resolve()
-       },1000)
-   })
+function goToHome() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            //
+            resolve(console.log('go to home'))
+        }, 1000)
+    })
 }
 
-function dinner(){
-  return new Promise((resolve, reject)=>{
-      setTimeout(()=>{
-          console.log('dinner')
-          resolve()
-      },2000)
-  })
+function dinner() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            //
+            resolve(console.log('dinner'))
+        }, 2000)
+    })
 }
 
-function playStation(){
-   return new Promise((resolve, reject)=>{
-       setTimeout(()=>{
-           console.log('play station')
-           resolve()
-       },900)
-   })
+function playStation() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            //
+            resolve(console.log('play station'))
+        }, 900)
+    })
 }
 
-function sleep(){
-   return new Promise((resolve)=>{
-       setTimeout(()=>{
-           console.log('sleep')
-           resolve()
-       },1500)
-   })
+function sleep() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log('sleep')
+        }, 900)
+    })
 }
-//
-// goodMorning()
-//     .then(result=>{
-//         return wash()
-//     })
-//     .then(result=>{
-//         return breakfast()
-//     })
-//     .then(result=>{
-//         return goTojob()
-//     })
-//     .then(result=>{
-//         return lunch()
-//     })
-//     .then(result=>{
-//         return goToHome()
-//     })
-//     .then(result=>{
-//         return dinner()
-//     })
-//     .then(result=>playStation())
-//     .then(result=>sleep())
-
-
-//---------------------------------------------------
 async function myDay() {
-    await goodMorning()
-    await wash()
-    await breakfast()
-    await goTojob()
-    await lunch()
-    await goToHome()
-    await dinner()
-    await playStation()
-    await sleep()
+    try {
+        const getGoodMorning = await goodMorning()
+        const getWash = await wash()
+        const getBreakfas = await breakfast()
+        const getGoTojob = await goTojob()
+        const getLunch = await lunch()
+        const getGoToHome = await goToHome()
+        const getDinner = await dinner()
+        const getPlayStation = await playStation()
+        const getSleep = await sleep()
+
+        console.log(getGoodMorning)
+        console.log(getWash)
+        console.log(getBreakfas)
+        console.log(getGoTojob)
+        console.log(getLunch)
+        console.log(getGoToHome)
+        console.log(getDinner)
+        console.log(getPlayStation)
+        console.log(getSleep)
+    } catch (e) {
+        console.log(e)
+    }
 }
 myDay()
